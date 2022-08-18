@@ -1,6 +1,6 @@
 const fileinclude = require('gulp-file-include');
 
-let project_folder = require('path').basename(__dirname);
+let project_folder = 'docs';
 let sourse_folder = '#Sourse';
 let fs = require('fs');
 
