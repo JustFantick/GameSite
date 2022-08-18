@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Main</title>
+</head>
+
+<body>
+	<div class="wrapper ibg">
+		<img src="img/bg.jpg" alt="">
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<ul class="header__tabs">
+						<div class="underline"></div>
+						<li class="initial">Главная</li>
+						<li>Новости</li>
+						<li>Форум</li>
+					</ul>
+					<div class="header__login">
+						<a href="#popup" class="just-link button popup-link">Войти в аккаунт</a>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<section class="main">
+			@@include('_content.html')
+			@@include('_news.html')
+		</section>
+		@@include('_footer.html')
+	</div>
+
+
+
+	<div id="popup" class="popup">
+		<div class="popup__body">
+			<form action="#" class="popup__content form">
+				<div class="form__title">Авторизация</div>
+				<div class="form__login input">
+					<div class="input__image">
+						<img src="img/logIn.svg" alt="">
+					</div>
+					<div class="input__place">
+						<input class="_req _email" placeholder="EmailName@gmail.com" type="text">
+					</div>
+				</div>
+				<div class="form__password input">
+					<div class="input__image">
+						<img src="img/password.svg" alt="">
+					</div>
+					<div class="input__place">
+						<input class="_req" placeholder="00101" type="password">
+					</div>
+				</div>
+				<button class="button">Авторизация</button>
+				<a href="author.html" class="prompt">Забыли пароль?</a>
+			</form>
+		</div>
+	</div>
+	<div id="popup_2" class="popup">
+		<div class="popup__body">
+			<div class="popup__content scndPopup">
+				<div class="scndPopup__image">
+					<img src="img/content_image.jpg" alt="">
+				</div>
+				<div class="scndPopup__buttons">
+					<a href="#" class="button">Скачать RAGE:MP</a>
+					<a href="#" class="button">Наши сервера</a>
+					<a href="#" class="button">Подключиться</a>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
