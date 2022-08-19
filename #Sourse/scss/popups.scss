@@ -72,7 +72,7 @@
 		position: relative;
 		padding-top: 20px;
 		&::before {
-			content: "Введите Ваш логин";
+			content: "Enter your login";
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -97,7 +97,7 @@
 		position: relative;
 		padding-top: 20px;
 		&::before {
-			content: "Введите пароль";
+			content: "Enter your password";
 			position: absolute;
 			top: 0;
 			left: 0;

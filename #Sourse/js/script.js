@@ -58,17 +58,17 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 	nav.addEventListener('click', function (event) {
 		let target = event.target.closest('li');
-		if (!target || target.innerHTML == "Форум") return;
+		if (!target || target.innerHTML == "Forum") return;
 		let initial = document.getElementsByClassName('initial')[0];
 
 		let current = document.querySelector('.current');
 		current.classList.remove('current');
 		initial.classList.remove('initial');
 		target.classList.add('initial');
-		if (target.innerHTML == "Главная") {
+		if (target.innerHTML == "Home") {
 			let mainContent = document.querySelectorAll('.main  > section');
 			mainContent[0].classList.add('current');
-		} else if (target.innerHTML == "Новости") {
+		} else if (target.innerHTML == "News") {
 			let mainContent = document.querySelectorAll('.main  > section');
 			mainContent[1].classList.add('current');
 			if (mainContent[0].classList.contains('author')) {
